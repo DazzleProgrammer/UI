@@ -1,0 +1,481 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ------------------------------------------------ Header -------------------------------------------- */
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    background: black;
+    /* position: fixed; */
+}
+
+.logo a{
+    text-decoration: none;
+    color: azure;
+    margin: 40px;
+}
+
+.logo a:hover{
+    color: #FE8835;
+}
+
+.navbar ul{
+    display: flex;
+    
+}
+
+.navbar ul li{
+    padding: 5px;
+    margin: 10px;
+    list-style: none;
+    font-size: 1rem;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: azure;
+}
+
+.navbar ul a:hover{
+    color: #FE8835;
+}
+
+.icons ul {
+    display: flex;
+}
+
+.icons ul li{
+    margin: 10px;
+    list-style: none;
+    font-size: 1rem;
+}
+
+
+.icons li:hover{
+    color: #FE8835;
+}
+
+.icons{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: azure;
+    cursor: pointer;
+}
+
+
+.icons button{
+    padding: 10px;
+    border-radius: 40% 40% 40% 40%;
+    background: #FE8835;
+    border: #FE8835;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.icons button:hover{
+    background: #fff;
+    color: #FE8835;
+}
+
+.icons ul button{
+    color: #fff;
+}
+
+.icons ul li i{
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+
+/* ------------------------------------------------ Header -------------------------------------------- */
+
+/* ------------------------------------------------ Main -------------------------------------------- */
+
+section{
+    padding: 15% 7%;
+}
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/gl4.jpg);
+    background-position:center ;
+    background-size: cover;
+}
+
+.main-text h1{
+    color: #fff;
+    font-size: 4rem;
+    
+}
+
+.main-text p{
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+
+.main-btn{
+    background: #FE8835;
+    color: #fff;
+    border: #FE8835 2px solid;
+    border-radius: 45%;
+    font-weight: 900;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 40px;
+    margin-left: 300px;
+    text-transform: uppercase;
+}
+
+.main-btn:hover{
+    background: #fff;
+    border: 1px solid #FE8835;
+    color: #FE8835;
+}
+
+
+
+
+/* ------------------------------------------------ Main -------------------------------------------- */
+
+
+
+/* ------------------------------------------------ About -------------------------------------------- */
+
+.about-container{
+    margin-left: 150px;
+    height: 500px;
+    width: 1200px;
+    display: flex;
+    color: #44556C;
+    margin-top: 100px ;
+}
+
+.mid-box{
+    margin: 50px;
+    height: 300px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+.mid-box:hover{
+    color: #272cae;
+}
+
+
+.mid-box h3{
+    font-weight: 900;
+    margin-bottom: 10px; 
+}
+
+
+.mid-box p{
+    margin: 10px; 
+    text-align: justify;
+
+}
+
+
+
+.sq-box{
+    border: 4px solid black;
+    border-radius: 10%;
+    margin: 50px;
+    margin-bottom: 15px;
+    margin-left: 100px;
+    height: 100px;
+    width: 100px;
+}
+
+.sq-box i{
+    padding: 25px;
+    font-size: 40px;
+}
+
+.sq-box i:hover{
+    color: #FE8835;
+}
+
+
+/* ------------------------------------------------ About -------------------------------------------- */
+
+
+
+/* ------------------------------------------------ About 2 -------------------------------------------- */
+
+span{
+    color: #FE8835;
+}
+
+.img-box img{
+    width: 600px;
+    height: 400px;
+}
+
+.content {
+    /* margin-top: 80px ; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content h1{
+    margin-right: 50px;
+    margin-left: 0;
+    margin-top: 50px;
+    text-shadow: 1px 1px 5px  #2e2c2c;
+}
+
+.content h3{
+    margin: 20px;
+    margin-right: 60px;
+}
+
+.content p{
+    margin-right: 40px;
+    text-align: justify;
+}
+
+
+
+/* ------------------------------------------------ About 2 -------------------------------------------- */
+
+
+
+/* ------------------------------------------------ Testimonials -------------------------------------------- */
+
+
+.box{
+    margin-top: 100px ;
+    border: 4px solid #406E8E;
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+    background: radial-gradient(#fff, #406E8E);
+}
+
+
+.test img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.217);
+    margin-top: -100px;
+}
+
+
+.test-box{
+    display: flex;
+    align-items: center;
+    /* justify-content:space-around; */
+    text-align: center;
+    margin-top: 40px;
+}
+
+.box h3{
+    margin-top: 30px;
+}
+
+.box p{
+    margin-top: 20px;
+}
+
+.box i{
+    margin: 20px;
+    margin-top: 30px;
+    border: 2px dotted rgb(9, 76, 153);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+.box i:hover{
+    color:aqua;
+    border: 2px dotted aqua;
+}
+
+/* ------------------------------------------------ Testimonials -------------------------------------------- */
+
+
+/* ------------------------------------------------ Brands -------------------------------------------- */
+
+.featured-box{
+    height: 300px;
+    margin: 30px;
+    margin-top: 150px;
+}
+
+.brand-box h1{
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    color: #44556C;
+}
+
+
+.brand-img{
+    justify-content: space-around;
+}
+
+.brand-img img{
+    width: 200px;
+    filter: grayscale();
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+.brand-box img:hover{
+    width: 200px;
+    filter: none;
+}
+
+
+
+/* ------------------------------------------------ Brands -------------------------------------------- */
+
+
+/* ------------------------------------------------ Booking -------------------------------------------- */
+
+.booking{
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
+}
+
+
+
+.booking h2{
+    font-weight: 900;
+    font-size: 3rem;
+    
+}
+
+.book-img img{
+    margin-top: 50px;
+    height: 750px;
+    width: 500px;
+    filter: grayscale();
+}
+
+
+.book-img img:hover{
+    filter: none;
+}
+
+
+.form{
+    padding: 50px;
+    font-size: 2rem;
+    align-items: center;
+    text-align: justify;
+    background: radial-gradient(#fff,rgb(70, 17, 17));
+}
+
+.form input, select{
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+.form select option{
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.form:hover{
+    background: radial-gradient(#fff,#272cae);
+}
+
+.form-div{
+    margin: 50px;
+}
+
+
+
+
+
+
+/* ------------------------------------------------ Booking -------------------------------------------- */
+
+
+
+
+
+
+/* ------------------------------------------------ Footer -------------------------------------------- */
+
+.footer{
+    background: #202027;
+    width: 100%;
+    height: 500px;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.row{
+    padding-bottom: 10px;
+}
+
+.row h3{
+    margin-bottom: 20px;
+}
+
+.row li{
+    line-height: 2;
+    list-style: none;
+    text-transform: capitalize; 
+    cursor: pointer; 
+}
+
+.row li:hover{
+    color: #FE8835;
+}
+
+
+.row a{
+    padding-bottom: 30px;
+    line-height: 3;
+}
+
+
+hr{
+    width: 1260px;
+    margin-top: 50px;
+    margin-left: 90px;
+    
+}
+
+
+.copyright{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* ------------------------------------------------ Footer -------------------------------------------- */
