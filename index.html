@@ -5,30 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Guitar</title>
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <!-- Header -->
-
+<div class="front">
     <header>
-        <div class="logo"> <a href="#"> Guitar </a> </div>
+        <div class="logo"> <a href="index.html"> Guitar </a> </div>
         <div class="navbar">
             <ul>
-                <li> <a href="#"> course </a>  </li>
-                <li> <a href="#"> songs </a>  </li>
-                <li> <a href="#"> tools </a>  </li>
-                <li> <a href="#"> explore </a>  </li>
-                <li> <a href="#"> store </a>  </li>
+                <li> <a href="html/course.html"> course </a>  </li>
+                <li> <a href="html/songs.html"> songs </a>  </li>
+                <li> <a href="tools.html"> tools </a>  </li>
+                <li> <a href="explore.html"> explore </a>  </li>
+                <li> <a href="store.html"> store </a>  </li>
             </ul>
         </div>
         <div class="icons">
         <ul>
             <li> <i class="fa-solid fa-magnifying-glass"> </i> </li>
-            <li> <button> join </button> </li>
-            <li> <button>  log in  </button> </li>
+            <li>  <button>
+                <span>Join</span>
+                <div class="line"></div>
+                <div class="line-2"></div>
+                <div class="speak"></div>
+                <div class="speak one"></div>
+                <div class="speak two"></div>
+                <div class="speak three"></div>
+            </button> </li>
+            <li>  <button>
+                <span>Log In</span>
+                <div class="line"></div>
+                <div class="line-2"></div>
+                <div class="speak"></div>
+                <div class="speak one"></div>
+                <div class="speak two"></div>
+                <div class="speak three"></div>
+            </button> </li>
         </ul>
         </div>
     </header>
@@ -42,11 +57,10 @@
     <section class="main">
         <div class="main-text">
             <h1>LEARN HOW TO PLAY GUITAR</h1>
-            <p>Songs. Techniques. Rhythm. Theory. Chords. Practice Tools. From Beginner to Advanced!</p>
-            <button class="main-btn">Start Learning</button>
+            <p>Songs. Techniques. Rhythm. Theory. Chords. Practice Tools. From Beginner to Advanced!</p> 
         </div>
     </section>
-
+</div>
 
 
     <!-- Main -->
@@ -180,28 +194,32 @@
             <h2>So What are you waiting for?<br> Book a free demo-session now!</h2>
             <div class="form-div">
             <form class="form">
+
+                <div class="inputbox">
+                    <input required="required" type="text">
+                    <span>Name</span>
+                    <i></i>
+                </div>
+                <div class="inputbox">
+                    <input required="required" type="text">
+                    <span>Email</span>
+                    <i></i>
+                </div>
+                <div class="inputbox">
+                    <input required="required" type="number">
+                    <span>Phone No.</span>
+                    <i></i>
+                </div>
+                <button>
+                    <span>Submit</span>
+                    <div class="line"></div>
+                    <div class="line-2"></div>
+                    <div class="speak"></div>
+                    <div class="speak one"></div>
+                    <div class="speak two"></div>
+                    <div class="speak three"></div>
+                </button>
                 
-                <label for="name">Name:</label>
-                <input type="text" name="name"><br><br>
-                <label for="email">Email:</label>
-                <input type="text" name="name"><br><br>
-                <!-- <label for="sex">Sex:</label>
-                <input type="radio" name="sex" id="male" value="male">
-                <label for="male">Male</label>
-                <input type="radio" name="sex" id="female" value="female">
-                <label for="female">Female</label> <br><br> -->
-                <label for="country">Country: </label>
-                <select name="country" id="country">
-                    <option>Select an option</option>
-                    <option value="nepal">Nepal</option>
-                    <option value="usa">USA</option>
-                    <option value="australia">Australia</option>
-                </select><br><br>
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" cols="30" rows="2"></textarea><br><br>
-                <input type="checkbox" name="newsletter" id="newsletter">
-                <label for="newsletter">Subscribe?</label><br><br>
-                <input type="submit" value="Submit">
             </form>
         </div>
         </div>
@@ -211,6 +229,12 @@
     </div>
 
     <!--- ------------------------------------------------ About 3 -------------------------------------------- -->
+
+    
+
+
+
+
 
     <!--- ------------------------------------------------ Footer -------------------------------------------- -->
     <div class="footer">
@@ -250,7 +274,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col4"> 
+        <div class="col4">
             <div class="row"><h3>lessons & songs app</h3>
                 <a href="#"><img src="images/apple-store-badge.svg" alt=""></a>
                 <a href="#"><img src="images/google-play-badge.svg" alt=""></a> 

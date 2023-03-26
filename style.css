@@ -3,20 +3,28 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* ------------------------------------------------ Header -------------------------------------------- */
-
+.front{
+    background-image: url(images/gl4.jpg);
+    background-position:center ;
+    background-size: cover;
+}
 
 header{
+    width: 100%;
     display: flex;
+    /* position: fixed; */
     justify-content: space-between;
     padding: 20px;
     text-transform: uppercase;
     font-size: 3rem;
-    background: black;
+    /* background: black; */
     /* position: fixed; */
 }
+
 
 .logo a{
     text-decoration: none;
@@ -76,15 +84,12 @@ header{
 .icons button{
     padding: 10px;
     border-radius: 40% 40% 40% 40%;
-    background: #FE8835;
-    border: #FE8835;
     text-transform: uppercase;
     font-weight: 900;
 }
 
 .icons button:hover{
     background: #fff;
-    color: #FE8835;
 }
 
 .icons ul button{
@@ -109,9 +114,10 @@ section{
 .main{
     width: 100%;
     height: 100vh;
-    background-image: url(images/gl4.jpg);
-    background-position:center ;
-    background-size: cover;
+    display: grid;
+    /* background-image: url(images/gl4.jpg); */
+    /* background-position:center ; */
+    /* background-size: cover; */
 }
 
 .main-text h1{
@@ -216,10 +222,6 @@ section{
 
 
 /* ------------------------------------------------ About 2 -------------------------------------------- */
-
-span{
-    color: #FE8835;
-}
 
 .img-box img{
     width: 600px;
@@ -378,34 +380,188 @@ span{
 }
 
 
+/* Form CSS */
+
 .form{
     padding: 50px;
-    font-size: 2rem;
+    font-size: 1rem;
     align-items: center;
     text-align: justify;
-    background: radial-gradient(#fff,rgb(70, 17, 17));
+    /* background: radial-gradient(#fff,rgb(70, 17, 17)); */
 }
 
-.form input, select{
-    padding-right: 100px;
-    padding-top: 20px;
+.inputbox {
+    position: relative;
+    width:596px;
+    margin-bottom: 50px;
 }
 
-.form select option{
-    font-size: 20px;
+.inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 20px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.inputbox input:valid ~span,
+.inputbox input:focus ~span {
+    color: #0279DA;
+    transform: translateX(-5px) translateY(-25px);
+    font-size: 0,75em;
+}
+
+.inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #0279DA;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+    height: 44px;
+}
+
+  /* Submit */
+
+
+button {
+    min-height: 60px;
+    display: flex;
     align-items: center;
-    text-align: center;
     justify-content: center;
+    width: 100%;
+    max-width: 170px;
+    border-radius: 50px;
+    border-width: 0;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 3px;
+    position: relative;
+    overflow: hidden;
 }
 
-.form:hover{
-    background: radial-gradient(#fff,#272cae);
+span {
+    position: relative;
+    z-index: 99;
 }
 
-.form-div{
-    margin: 50px;
+.line,.line-2 {
+    position: absolute;
+    width: calc(100% - 20px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 1px;
+    border-radius: 100%;
+    background-color: hsla(240, 100%, 50%, 0.39);
+    bottom: 5px;
+    animation: line .5s infinite linear;
+    box-shadow: 0 0 10px 2px rgb(0, 60, 255);
+    z-index: 9;
 }
 
+@keyframes line {
+    0% {
+    height: 1px;
+    background-color: hsla(240, 100%, 50%, 0.285);
+    }
+
+    50% {
+    transform: scaleY(5);
+    background-color: hsla(0, 59%, 41%, 0.032);
+    box-shadow: 0 0 100px 20px rgb(0, 60, 255);
+    }
+
+    100% {
+    height: 2px;
+    background-color: rgb(255, 255, 255)
+    }
+}
+
+.line-2 {
+    animation: line-2 .5s infinite linear;
+    bottom: 1px;
+    box-shadow: 0 0 10px 2px rgb(0, 60, 255);
+}
+
+@keyframes line-2 {
+    0% {
+    height: 1px;
+    background-color: hsl(327, 100%, 50%);
+    }
+
+    50% {
+    height: 2px;
+    background-color: hsl(0, 0%, 85%)
+    }
+
+    100% {
+    height: 2px;
+    background-color: rgb(255, 255, 255)
+    }
+}
+
+.speak {
+    position: absolute;
+    width: 330px;
+    height: 10px;
+    background-color: pink;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    animation: speak .8s infinite linear;
+}
+
+.speak.one {
+    left: calc(50% + 20px);
+    animation: speak 6s infinite linear;
+    background-color: hsl(284deg 79% 55%);
+}
+
+.speak.two {
+    left: calc(50% + 10px);
+    animation: speak .6s infinite linear;
+    background-color: hsl(284deg 79% 55%);
+}
+.speak.two {
+    left: calc(50% + -10px);
+    animation: speak .6s infinite linear;
+    background-color: rgb(0, 255, 149);
+}
+
+@keyframes speak {
+    0% {
+    transform: translateX(-50%) scale(.10);
+    }
+}
 
 
 
@@ -479,3 +635,6 @@ hr{
 
 
 /* ------------------------------------------------ Footer -------------------------------------------- */
+
+
+
